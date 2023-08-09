@@ -8,7 +8,7 @@ def logic(data,type,key):
             else: result=result+lst[(lst.index(alphabet)-key)%26]
         else:
             if type=="encryption": result=result+lst[(lst.index(alphabet.lower())+key)%26]
-    return result
+    return result 
 print("-----ENCRYPTION-----")
 plaintxt=input("Enter plain text:")
 cte=logic(plaintxt,"encryption",3)
